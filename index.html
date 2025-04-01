@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NATOMAQ - Assistência técnica especializada em conserto de geladeiras, máquinas de lavar, freezers e toda linha branca. Serviço rápido com 20 anos de experiência.">
-    <meta name="keywords" content="conserto geladeira, reparo máquina lavar, assistência técnica linha branca, conserto freezer, técnico microondas">
-    <title>NATOMAQ - Assistência Técnica Especializada em Linha Branca</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Favicon -->
-    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
-    <!-- Estilo -->
-    <style>
-        :root {
-            --primary-color: #0056b3;
-            --secondary-color: #dc3545;
-            --whatsapp-color: #25D366;
-            --text-color: #333;
-            --light-bg: #f8f9fa;
-        }
+    <meta name="description" content="NATOMAQ - Especializada em Linha Branca. Conserto de Geladeiras, Freezers, Máquinas de Lavar e mais. Atendimento em domicílio com 20 anos de experiência.">
+    <meta name="keywords" content="conserto geladeira, reparo máquina de lavar, linha branca, técnico eletrodomésticos">
+    <title>NATOMAQ - Especializada em Linha Branca</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" type="image/x-icon">
+</head>
+<body>
 
-        * {
-            box-sizing: border-box;
+    <div class="banner banner-1">
+        <h1><span class="nato">NATO</span><span class="maq">MAQ</span></h1>
+        <p>Especializada em Linha Branca</p>
+        <a href="https://wa.me/5511962172325" target="_blank">Contato via WhatsApp</a>
+    </div>
+
+    <div class="banner banner-2">
+        <div class="image">
+            <img src="https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg" alt="Técnico especializado em conserto de eletrodomésticos" style="max-width: 100%;">
+        </div>
+        <div class="text">
+            <h2>PAROU DE FUNCIONAR? CHAMA A NATOMAQ!</h2>
+            <p>Nossos serviços incluem consertos de Geladeiras, Freezers, Microondas, Lava e Seca, Tanquinhos, Centrifugas e Máquinas de Lavar Roupa. Estamos há mais de 20 anos no mercado oferecendo técnicos especializados que vão até a sua casa para realizar orçamentos e reparos com garantia.</p>
+            <div class="destaque">
+                <p>✓ Atendimento Rápido</p>
+                <p>✓ Peças Originais</p>
+                <p>✓ Garantia nos Serviços</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner banner-3">
+        <h2>Agende uma visita do técnico na sua casa</h2>
+        <p>Agende um Orçamento</p>
+        <div class="contact">
+            <a href="https://wa.me/5511962172325" target="_blank" class="whatsapp-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="40">
+                <span>(11) 96217-2325</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Imagens retiradas do Freepik. Site desenvolvido por YUSEC. © 2023 NATOMAQ - Todos os direitos reservados.</p>
+    </footer>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+            background-color: #f2f2f2;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-bg);
-            overflow-x: hidden;
         }
 
         .banner {
             text-align: center;
             color: white;
-            padding: 60px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .banner > * {
-            position: relative;
-            z-index: 2;
+            padding: 50px 20px;
         }
 
         .banner-1 {
-            background: url('https://img.freepik.com/vetores-gratis/composicao-realista-de-eletrodomesticos_1284-65307.jpg') no-repeat center center/cover;
-            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -70,179 +72,144 @@
         }
 
         .banner-1 h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: 48px;
             font-weight: bold;
-            margin: 0 0 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .banner-1 .nato {
-            color: var(--secondary-color);
+            color: red;
         }
 
         .banner-1 .maq {
-            color: var(--primary-color);
+            color: blue;
         }
 
         .banner-1 p {
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+            margin: 10px 0 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
 
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background-color: var(--whatsapp-color);
+        .banner-1 a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #25D366;
             color: white;
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
+            border-radius: 5px;
+            font-size: 20px;
             font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
         }
 
-        .whatsapp-btn:hover {
+        .banner-1 a:hover {
             background-color: #128C7E;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .banner-2 {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: #FFFFFF;
-            color: var(--text-color);
-            padding: 50px 20px;
+            background-color: #fff;
+            color: #333;
+            padding: 40px 20px;
         }
 
         .banner-2 .image {
             flex: 1;
             min-width: 300px;
-            max-width: 50%;
             text-align: center;
             padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .banner-2 .image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .banner-2 .text {
             flex: 1;
             min-width: 300px;
-            max-width: 50%;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: left;
         }
 
         .banner-2 h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-size: 28px;
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: #0056b3;
         }
 
         .banner-2 p {
-            font-size: 1.1rem;
+            font-size: 18px;
             margin-bottom: 20px;
         }
 
+        .destaque p {
+            font-size: 16px;
+            color: #25D366;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
         .banner-3 {
-            background-color: var(--primary-color);
+            background-color: #0056b3;
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
         .banner-3 h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-size: 28px;
             margin-bottom: 15px;
         }
 
         .banner-3 p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 20px;
+            margin-bottom: 25px;
         }
 
-        .contact {
+        .whatsapp-link {
             display: inline-flex;
             align-items: center;
-            gap: 15px;
-            background-color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .whatsapp-icon {
-            color: var(--whatsapp-color);
-            font-size: 2rem;
-        }
-
-        .phone {
-            font-size: clamp(1.5rem, 3vw, 2rem);
+            background-color: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
             font-weight: bold;
-            color: var(--primary-color);
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #128C7E;
+        }
+
+        .whatsapp-link img {
+            margin-right: 10px;
         }
 
         footer {
             text-align: center;
-            padding: 30px 20px;
-            background-color: var(--text-color);
-            color: white;
-        }
-
-        footer p {
-            font-size: 0.9rem;
-            margin: 0;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
         }
 
         @media (max-width: 768px) {
-            .banner-2 .image,
-            .banner-2 .text {
-                max-width: 100%;
-                min-width: 100%;
+            .banner-1 h1 {
+                font-size: 36px;
             }
-
-            .banner-1 {
-                min-height: 80vh;
+            
+            .banner-1 p {
+                font-size: 20px;
+            }
+            
+            .banner-2 .image, 
+            .banner-2 .text {
+                flex: 100%;
+                max-width: 100%;
             }
         }
     </style>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXX');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="banner banner-1">
-        <h1><span class="nato">NATO</span><span class="maq">MAQ</span></h1>
-        <p>Especializada em Linha Branca</p>
-        <a href="https://wa.me/5511962172325" class="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i> Contato via WhatsApp
-        </a>
-    </div>
-    <div class="banner banner-2">
-        <div class="image">
+</body>
+</html>
