@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Configurações essenciais -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
   <meta name="description" content="NATOMAQ - Especializada em Linha Branca. Conserto de Geladeiras, Freezers, Máquinas de Lavar e mais. Atendimento em domicílio com 20 anos de experiência.">
   <meta name="keywords" content="conserto geladeira, reparo máquina de lavar, linha branca, técnico eletrodomésticos">
-
-  <!-- Título e ícone da aba -->
   <title>NATOMAQ - Especializada em Linha Branca</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Google Analytics 4 -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1LF7PGWJ6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,59 +17,20 @@
     gtag('js', new Date());
     gtag('config', 'G-D1LF7PGWJ6', { send_page_view: true, transport_type: 'beacon' });
   </script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Menu de navegação */
-    nav {
-      background-color: #333;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      padding: 60px 20px;
-    }
-    .depoimentos {
-      background-color: #fff;
-      text-align: center;
-    }
-    .depoimentos blockquote {
-      font-style: italic;
-      margin: 20px auto;
-      max-width: 600px;
-    }
-    .faq {
-      background-color: #f9f9f9;
-    }
-    .faq h3 {
-      color: #0056b3;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Menu -->
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#depoimentos">Depoimentos</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contato">Contato</a>
+  <!-- Menu hamburguer responsivo -->
+  <nav class="nav-mobile">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
   </nav>
 
   <!-- Banner inicial -->
