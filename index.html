@@ -13,39 +13,83 @@
   <title>NATOMAQ - Especializada em Linha Branca</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" type="image/x-icon">
 
-  <!-- Google Analytics 4 (sem alterar layout ou CSS) -->
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1LF7PGWJ6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    gtag('config', 'G-D1LF7PGWJ6', {
-      send_page_view: true,
-      transport_type: 'beacon'
-    });
+    gtag('config', 'G-D1LF7PGWJ6', { send_page_view: true, transport_type: 'beacon' });
   </script>
-</head>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Menu de navegação */
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+    .depoimentos {
+      background-color: #fff;
+      text-align: center;
+    }
+    .depoimentos blockquote {
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    .faq {
+      background-color: #f9f9f9;
+    }
+    .faq h3 {
+      color: #0056b3;
+    }
+  </style>
+</head>
 <body>
 
+  <!-- Menu -->
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
   <!-- Banner inicial -->
-  <div class="banner banner-1">
+  <div class="banner banner-1" id="inicio">
     <h1><span class="nato">NATO</span><span class="maq">MAQ</span></h1>
     <p>Especializada em Linha Branca</p>
-    <a href="https://wa.me/5511962172325" target="_blank"
-       onclick="gtag('event', 'clique_whatsapp', {
-         'event_category': 'contato',
-         'event_label': 'topo'
-       });">
-       Contato via WhatsApp
+    <a href="https://wa.me/5511962172325" target="_blank" aria-label="Contato via WhatsApp"
+       onclick="gtag('event', 'clique_whatsapp', { 'event_category': 'contato', 'event_label': 'topo' });">
+       Fale com um técnico agora
     </a>
   </div>
 
-  <!-- Banner com imagem e texto -->
-  <div class="banner banner-2">
+  <!-- Serviços -->
+  <div class="banner banner-2 section" id="servicos">
     <div class="image">
-      <img src="https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg" alt="Técnico especializado em conserto de eletrodomésticos" style="max-width: 100%;">
+      <img src="https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg" alt="Técnico especializado em conserto de eletrodomésticos" class="banner-image">
     </div>
     <div class="text">
       <h2>PAROU DE FUNCIONAR? CHAMA A NATOMAQ!</h2>
@@ -58,17 +102,32 @@
     </div>
   </div>
 
-  <!-- Banner com botão de agendamento -->
-  <div class="banner banner-3">
+  <!-- Depoimentos -->
+  <div class="section depoimentos" id="depoimentos">
+    <h2>O que dizem nossos clientes</h2>
+    <blockquote>"Serviço rápido e de qualidade. O técnico resolveu meu problema no mesmo dia!" – Carla M., São Paulo</blockquote>
+    <blockquote>"Recomendo a NATOMAQ! Honestidade, preço justo e atendimento em domícilio." – Pedro L., Guarulhos</blockquote>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section faq" id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <h3>Como agendar um atendimento?</h3>
+    <p>Basta clicar em qualquer botão do WhatsApp e falar diretamente com um técnico.</p>
+    <h3>Vocês atendem em domícilio?</h3>
+    <p>Sim, nosso atendimento é 100% em domícilio, com orçamento no local.</p>
+    <h3>Qual a região de atendimento?</h3>
+    <p>Atendemos toda a região de São Paulo e Grande SP.</p>
+  </div>
+
+  <!-- Agendamento -->
+  <div class="banner banner-3" id="contato">
     <h2>Agende uma visita do técnico na sua casa</h2>
     <p>Agende um Orçamento</p>
     <div class="contact">
       <a href="https://wa.me/5511962172325" target="_blank" class="whatsapp-link"
-         onclick="gtag('event', 'clique_whatsapp', {
-           'event_category': 'contato',
-           'event_label': 'rodape'
-         });">
-        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="40">
+         onclick="gtag('event', 'clique_whatsapp', { 'event_category': 'contato', 'event_label': 'rodape' });" aria-label="Contato via WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="Ícone do WhatsApp" width="40">
         <span>(11) 96217-2325</span>
       </a>
     </div>
@@ -79,171 +138,5 @@
     <p>Imagens retiradas do Freepik. Site desenvolvido por YUSEC. © 2023 NATOMAQ - Todos os direitos reservados.</p>
   </footer>
 
-  <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f2f2f2;
-            line-height: 1.6;
-        }
-
-        .banner {
-            text-align: center;
-            color: white;
-            padding: 50px 20px;
-        }
-
-        .banner-1 {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg') no-repeat center center;
-            background-size: cover;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .banner-1 h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .banner-1 .nato {
-            color: red;
-        }
-
-        .banner-1 .maq {
-            color: blue;
-        }
-
-        .banner-1 p {
-            font-size: 24px;
-            margin: 10px 0 20px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-
-        .banner-1 a {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 20px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .banner-1 a:hover {
-            background-color: #128C7E;
-        }
-
-        .banner-2 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #fff;
-            color: #333;
-            padding: 40px 20px;
-        }
-
-        .banner-2 .image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .banner-2 .text {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-            text-align: left;
-        }
-
-        .banner-2 h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #0056b3;
-        }
-
-        .banner-2 p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .destaque p {
-            font-size: 16px;
-            color: #25D366;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .banner-3 {
-            background-color: #0056b3;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .banner-3 h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .banner-3 p {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
-
-        .whatsapp-link {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25D366;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .whatsapp-link:hover {
-            background-color: #128C7E;
-        }
-
-        .whatsapp-link img {
-            margin-right: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .banner-1 h1 {
-                font-size: 36px;
-            }
-            
-            .banner-1 p {
-                font-size: 20px;
-            }
-            
-            .banner-2 .image, 
-            .banner-2 .text {
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
 </body>
 </html>
