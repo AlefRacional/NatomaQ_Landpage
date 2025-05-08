@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NATOMAQ - Especializada em Linha Branca. Conserto de Geladeiras, Freezers, Máquinas de Lavar e mais. Atendimento em domicílio com 20 anos de experiência.">
-    <meta name="keywords" content="conserto geladeira, reparo máquina de lavar, linha branca, técnico eletrodomésticos">
-    <title>NATOMAQ - Especializada em Linha Branca</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" type="image/x-icon">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1LF7PGWJ6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Configurações essenciais -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      gtag('config', 'G-D1LF7PGWJ6', {
-        'send_page_view': true,
-        'transport_type': 'beacon',
-        'linker': {
-          'domains': ['10476028126']
-        }
-      });
-    </script>
+  <!-- SEO -->
+  <meta name="description" content="NATOMAQ - Especializada em Linha Branca. Conserto de Geladeiras, Freezers, Máquinas de Lavar e mais. Atendimento em domicílio com 20 anos de experiência.">
+  <meta name="keywords" content="conserto geladeira, reparo máquina de lavar, linha branca, técnico eletrodomésticos">
+
+  <!-- Título e ícone da aba -->
+  <title>NATOMAQ - Especializada em Linha Branca</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" type="image/x-icon">
+
+  <!-- Google Analytics 4 (sem alterar layout ou CSS) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1LF7PGWJ6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D1LF7PGWJ6', {
+      send_page_view: true,
+      transport_type: 'beacon'
+    });
+  </script>
 </head>
+
 <body>
 
-    <div class="banner banner-1">
-        <h1><span class="nato">NATO</span><span class="maq">MAQ</span></h1>
-        <p>Especializada em Linha Branca</p>
-        <a href="https://wa.me/5511962172325" target="_blank">Contato via WhatsApp</a>
-    </div>
+  <!-- Banner inicial -->
+  <div class="banner banner-1">
+    <h1><span class="nato">NATO</span><span class="maq">MAQ</span></h1>
+    <p>Especializada em Linha Branca</p>
+    <a href="https://wa.me/5511962172325" target="_blank"
+       onclick="gtag('event', 'clique_whatsapp', {
+         'event_category': 'contato',
+         'event_label': 'topo'
+       });">
+       Contato via WhatsApp
+    </a>
+  </div>
 
-    <div class="banner banner-2">
-        <div class="image">
-            <img src="https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg" alt="Técnico especializado em conserto de eletrodomésticos" style="max-width: 100%;">
-        </div>
-        <div class="text">
-            <h2>PAROU DE FUNCIONAR? CHAMA A NATOMAQ!</h2>
-            <p>Nossos serviços incluem consertos de Geladeiras, Freezers, Microondas, Lava e Seca, Tanquinhos, Centrifugas e Máquinas de Lavar Roupa. Estamos há mais de 20 anos no mercado oferecendo técnicos especializados que vão até a sua casa para realizar orçamentos e reparos com garantia.</p>
-            <div class="destaque">
-                <p>✓ Atendimento Rápido</p>
-                <p>✓ Peças Originais</p>
-                <p>✓ Garantia nos Serviços</p>
-            </div>
-        </div>
+  <!-- Banner com imagem e texto -->
+  <div class="banner banner-2">
+    <div class="image">
+      <img src="https://img.freepik.com/fotos-gratis/homem-de-vista-lateral-trabalhando-como-encanador_23-2150746324.jpg" alt="Técnico especializado em conserto de eletrodomésticos" style="max-width: 100%;">
     </div>
-
-    <div class="banner banner-3">
-        <h2>Agende uma visita do técnico na sua casa</h2>
-        <p>Agende um Orçamento</p>
-        <div class="contact">
-            <a href="https://wa.me/5511962172325" target="_blank" class="whatsapp-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="40">
-                <span>(11) 96217-2325</span>
-            </a>
-        </div>
+    <div class="text">
+      <h2>PAROU DE FUNCIONAR? CHAMA A NATOMAQ!</h2>
+      <p>Nossos serviços incluem consertos de Geladeiras, Freezers, Microondas, Lava e Seca, Tanquinhos, Centrífugas e Máquinas de Lavar Roupa. Estamos há mais de 20 anos no mercado oferecendo técnicos especializados que vão até a sua casa para realizar orçamentos e reparos com garantia.</p>
+      <div class="destaque">
+        <p>✓ Atendimento Rápido</p>
+        <p>✓ Peças Originais</p>
+        <p>✓ Garantia nos Serviços</p>
+      </div>
     </div>
+  </div>
 
-    <footer>
-        <p>Imagens retiradas do Freepik. Site desenvolvido por YUSEC. © 2023 NATOMAQ - Todos os direitos reservados.</p>
-    </footer>
-    <style>
+  <!-- Banner com botão de agendamento -->
+  <div class="banner banner-3">
+    <h2>Agende uma visita do técnico na sua casa</h2>
+    <p>Agende um Orçamento</p>
+    <div class="contact">
+      <a href="https://wa.me/5511962172325" target="_blank" class="whatsapp-link"
+         onclick="gtag('event', 'clique_whatsapp', {
+           'event_category': 'contato',
+           'event_label': 'rodape'
+         });">
+        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="40">
+        <span>(11) 96217-2325</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Imagens retiradas do Freepik. Site desenvolvido por YUSEC. © 2023 NATOMAQ - Todos os direitos reservados.</p>
+  </footer>
+
+  <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
